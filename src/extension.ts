@@ -11,47 +11,47 @@ export function activate(context: vscode.ExtensionContext)
 		const lang = await vscode.window.showQuickPick(<KeyedQuickPick<Language>[]>[
 			{
 				key: 'it_IT',
-				label: 'Italian'
+				label: 'Italian',
 			},
 			{
 				key: 'fr_FR',
-				label: 'French'
+				label: 'French',
 			},
 			{
 				key: 'de_DE',
-				label: 'German (Germany)'
+				label: 'German (Germany)',
 			},
 			{
 				key: 'en_US',
-				label: 'English (US)'
+				label: 'English (US)',
 			},
 			{
 				key: 'el_GR',
-				label: 'Greek'
+				label: 'Greek',
 			},
 			{
 				key: 'es_ES',
-				label: 'Spanish'
+				label: 'Spanish',
 			},
 			{
 				key: 'no_NO',
-				label: 'Norwegian'
+				label: 'Norwegian',
 			},
 			{
 				key: 'pt_PT',
-				label: 'Portuguese'
+				label: 'Portuguese',
 			},
 			{
 				key: 'ro_RO',
-				label: 'Romanian'
+				label: 'Romanian',
 			},
 			{
 				key: 'ru_RU',
-				label: 'Russian'
+				label: 'Russian',
 			},
 			{
 				key: 'sk_SK',
-				label: 'Slovak'
+				label: 'Slovak',
 			},
 			{
 				key: 'cs_CZ',

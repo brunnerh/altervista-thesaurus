@@ -32,12 +32,17 @@ The lookup commands can also be invoked from the text editor context menu.
 
 The following languages are supported by the service:
 
+- Czech
+- Danish
 - English (US)
 - French
-- German
+- German (Germany)
+- German (Switzerland)
 - Greek
+- Hungarian
 - Italian
 - Norwegian
+- Polish
 - Portuguese
 - Romanian
 - Russian
