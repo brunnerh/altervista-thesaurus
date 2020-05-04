@@ -12,7 +12,7 @@
         "url": "https://github.com/brunnerh/altervista-thesaurus.git"
     },
     "engines": {
-        "vscode": "^1.21.0"
+        "vscode": "^1.44.0"
     },
     "categories": [
         "Other"
@@ -56,7 +56,10 @@
             "properties": {
                 "altervista-thesaurus.key": {
                     "description": "The API key to use for the altervista.org thesaurus service.",
-                    "type": ["string", "null"],
+                    "type": [
+                        "string",
+                        "null"
+                    ],
                     "default": null
                 },
                 "altervista-thesaurus.lang": {
@@ -64,7 +67,22 @@
                     "type": "string",
                     "default": "en_US",
                     "enum": [
-                        "it_IT", "fr_FR", "de_DE", "en_US", "el_GR", "es_ES", "no_NO", "pt_PT", "ro_RO", "ru_RU", "sk_SK"
+                        "cs_CZ",
+                        "da_DK",
+                        "de_CH",
+                        "de_DE",
+                        "el_GR",
+                        "en_US",
+                        "es_ES",
+                        "fr_FR",
+                        "hu_HU",
+                        "it_IT",
+                        "no_NO",
+                        "pl_PL",
+                        "pt_PT",
+                        "ro_RO",
+                        "ru_RU",
+                        "sk_SK"
                     ]
                 }
             }
@@ -74,20 +92,17 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "test": "npm run compile && node out/test/index.js"
     },
     "devDependencies": {
         "@types/mocha": "^2.2.42",
-        "@types/node": "^7.0.43",
-        "@types/node-fetch": "^1.6.7",
-        "@types/opn": "^5.1.0",
-        "tslint": "^5.8.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6"
+        "@types/node": "^12.12.37",
+        "@types/node-fetch": "^2.5.7",
+        "@types/vscode": "^1.44.0",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.0.2"
     },
     "dependencies": {
-        "node-fetch": "^2.1.1",
-        "opn": "^5.3.0"
+        "node-fetch": "^2.6.0"
     }
 }
